@@ -5,8 +5,6 @@ HTTP fundamental
 The HTTP request/response library package of Les Ateliers Pierrot
 
 
-
-
 ## Development
 
 To install all PHP packages for development, just run:
@@ -17,7 +15,7 @@ A documentation can be generated with [Sami](https://github.com/fabpot/Sami) run
 
     ~$ php vendor/sami/sami/sami.php render sami.config.php
 
-The latest version of this documentation is available online at <http://docs.ateliers-pierrot.fr/library/>.
+The latest version of this documentation is available online at <http://docs.ateliers-pierrot.fr/http-fundamental/>.
 
 
 ## Author & License
@@ -26,7 +24,7 @@ The latest version of this documentation is available online at <http://docs.ate
 
 >    http://github.com/atelierspierrot/http-fundamental
 
->    Copyright (c) 2015 Pierre Cassat and contributors
+>    Copyright (c) 2013-2015 Pierre Cassat and contributors
 
 >    Licensed under the GPL Apache 2 license.
 
