@@ -1,8 +1,0 @@
-{
-    "name": "atelierspierrot/http-fundaental-demo",
-    "description": "demonstration pages for the atelierspierrot/http-fundaental package",
-    "minimum-stability": "dev",
-    "require": {
-        "atelierspierrot/demo-builder": "dev-master"
-    }
-}
