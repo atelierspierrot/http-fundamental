@@ -1,0 +1,22 @@
+{
+  "title":"Demo of the 'HTTP Fundamental' package",
+  "slogan":"The HTTP request/response library of Les Ateliers Pierrot.",
+  "intro":"These pages show and demonstrate the usage and functionality of the <a href=\"http://github.com/atelierspierrot/http-fundamental\">atelierspierrot/http-fundamental</a> PHP package you just downloaded.",
+  "page_title": "Demo - atelierspierrot/http-fundamental",
+  "brand_title":"HTTP Fundamental",
+  "manual_url": "http://docs.ateliers-pierrot/http-fundamental/",
+  "sources_url":"http://github.com/atelierspierrot/http-fundamental",
+  "content_notice": "<a href=\"http://github.com/atelierspierrot/http-fundamental\">atelierspierrot/http-fundamental</a> package by <a href=\"https://github.com/atelierspierrot\">Les Ateliers Pierrot</a> under <a href=\"http://www.apache.org/licenses/LICENSE-2.0\">Apache 2.0</a> license.",
+  "pages": {
+    "home": {
+      "page": "home.md.php",
+      "title": "Home of the demo",
+      "content": "Home"
+    },
+    "api": {
+      "content":"API",
+      "title":"Library documentation",
+      "url":"http://docs.atelierspierrot.fr/http-fundamental/"
+    }
+  }
+}
