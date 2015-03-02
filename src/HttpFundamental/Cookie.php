@@ -21,8 +21,6 @@
  */
 namespace HttpFundamental;
 
-/**
- */
 class Cookie
 {
     
