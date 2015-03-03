@@ -7,6 +7,7 @@ var tree = [["HttpFundamental","HttpFundamental.html","",
                 [        ]]        ]],["ContentType","HttpFundamental\/ContentType.html","",
                 [        ]],["ContentTypeInterface","HttpFundamental\/ContentTypeInterface.html","",
                 [        ]],["Cookie","HttpFundamental\/Cookie.html","",
+                [        ]],["HttpStatus","HttpFundamental\/HttpStatus.html","",
                 [        ]],["Request","HttpFundamental\/Request.html","",
                 [        ]],["Response","HttpFundamental\/Response.html","",
                 [        ]]        ]]        ]
