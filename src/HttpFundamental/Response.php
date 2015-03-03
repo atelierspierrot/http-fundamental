@@ -22,7 +22,6 @@
 namespace HttpFundamental;
 
 use \Patterns\Interfaces\ResponseInterface;
-use \Patterns\Commons\HttpStatus;
 
 /**
  * The global HTTP response class
