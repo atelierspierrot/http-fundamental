@@ -27,7 +27,7 @@ use \Library\Helper\Url as UrlHelper;
 /**
  * The global request class
  *
- * @author      Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 class Request
     implements RequestInterface

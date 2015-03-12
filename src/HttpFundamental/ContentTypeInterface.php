@@ -24,6 +24,7 @@ namespace HttpFundamental;
 use \HttpFundamental\Response;
 
 /**
+ * @author  piwi <me@e-piwi.fr>
  */
 interface ContentTypeInterface
 {

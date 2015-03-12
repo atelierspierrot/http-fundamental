@@ -22,6 +22,9 @@
 
 namespace HttpFundamental;
 
+/**
+ * @author  piwi <me@e-piwi.fr>
+ */
 class Cookie
 {
     

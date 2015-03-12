@@ -28,7 +28,7 @@ namespace HttpFundamental;
  * This class only defines constants of defined HTTP protocol's status codes as specified
  * in [RFC 2616](http://tools.ietf.org/html/rfc2616) and [RFC 3648](http://tools.ietf.org/html/rfc3648).
  * 
- * @author  Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 class HttpStatus
 {
