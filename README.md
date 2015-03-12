@@ -1,24 +1,32 @@
 HTTP fundamental
 ================
 
-[![documentation](http://img.ateliers-pierrot-static.fr/readthe-doc.png)](http://docs.ateliers-pierrot.fr/http-fundamental/)
+[![documentation](http://img.ateliers-pierrot-static.fr/read-the-doc.svg)](http://docs.ateliers-pierrot.fr/http-fundamental/)
 The HTTP request/response library package of Les Ateliers Pierrot
 
 
-## Development
+Installation
+------------
 
-To install all PHP packages for development, just run:
+For a complete information about how to install this package and load its namespace, 
+please have a look at [our *USAGE* documentation](http://github.com/atelierspierrot/atelierspierrot/blob/master/USAGE.md).
 
-    ~$ composer install --dev
+If you are a [Composer](http://getcomposer.org/) user, just add the package to the 
+requirements of your project's `composer.json` manifest file:
 
-A documentation can be generated with [Sami](https://github.com/fabpot/Sami) running:
+```json
+"atelierspierrot/http-fundamental": "dev-master"
+```
 
-    ~$ php vendor/sami/sami/sami.php render sami.config.php
+You can use a specific release or the latest release of a major version using the appropriate
+[version constraint](http://getcomposer.org/doc/01-basic-usage.md#package-versions).
 
-The latest version of this documentation is available online at <http://docs.ateliers-pierrot.fr/http-fundamental/>.
+Please note that this package depends on the externals [PHP Patterns](https://github.com/atelierspierrot/patterns)
+and [PHP Library](https://github.com/atelierspierrot/library).
 
 
-## Author & License
+Author & License
+----------------
 
 >    HTTP fundamental
 
