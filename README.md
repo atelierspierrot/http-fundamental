@@ -1,32 +1,38 @@
 HTTP fundamental
 ================
 
-[![documentation](http://img.ateliers-pierrot-static.fr/readthe-doc.png)](http://docs.ateliers-pierrot.fr/http-fundamental/)
+[![documentation](http://img.ateliers-pierrot-static.fr/read-the-doc.svg)](http://docs.ateliers-pierrot.fr/http-fundamental/)
 The HTTP request/response library package of Les Ateliers Pierrot
 
 
+Installation
+------------
+
+For a complete information about how to install this package and load its namespace, 
+please have a look at [our *USAGE* documentation](http://github.com/atelierspierrot/atelierspierrot/blob/master/USAGE.md).
+
+If you are a [Composer](http://getcomposer.org/) user, just add the package to the 
+requirements of your project's `composer.json` manifest file:
+
+```json
+"atelierspierrot/http-fundamental": "dev-master"
+```
+
+You can use a specific release or the latest release of a major version using the appropriate
+[version constraint](http://getcomposer.org/doc/01-basic-usage.md#package-versions).
+
+Please note that this package depends on the externals [PHP Patterns](https://github.com/atelierspierrot/patterns)
+and [PHP Library](https://github.com/atelierspierrot/library).
 
 
-## Development
-
-To install all PHP packages for development, just run:
-
-    ~$ composer install --dev
-
-A documentation can be generated with [Sami](https://github.com/fabpot/Sami) running:
-
-    ~$ php vendor/sami/sami/sami.php render sami.config.php
-
-The latest version of this documentation is available online at <http://docs.ateliers-pierrot.fr/library/>.
-
-
-## Author & License
+Author & License
+----------------
 
 >    HTTP fundamental
 
 >    http://github.com/atelierspierrot/http-fundamental
 
->    Copyright (c) 2015 Pierre Cassat and contributors
+>    Copyright (c) 2013-2015 Pierre Cassat and contributors
 
 >    Licensed under the GPL Apache 2 license.
 

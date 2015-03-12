@@ -22,12 +22,11 @@
 namespace HttpFundamental;
 
 use \Patterns\Interfaces\ResponseInterface;
-use \Patterns\Commons\HttpStatus;
 
 /**
  * The global HTTP response class
  *
- * @author      Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 class Response
     implements ResponseInterface

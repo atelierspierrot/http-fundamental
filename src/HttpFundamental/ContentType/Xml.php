@@ -25,7 +25,7 @@ use \HttpFundamental\ContentTypeInterface;
 use \HttpFundamental\Response;
 
 /**
- * @author      Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 class Xml
     implements ContentTypeInterface

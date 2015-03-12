@@ -26,7 +26,7 @@ use \HttpFundamental\Response;
 use \Library\Converter\Html2Text;
 
 /**
- * @author      Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 class PlainText
     implements ContentTypeInterface

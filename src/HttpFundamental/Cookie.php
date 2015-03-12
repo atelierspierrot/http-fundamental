@@ -19,9 +19,11 @@
  * The source code of this package is available online at 
  * <http://github.com/atelierspierrot/http-fundamental>.
  */
+
 namespace HttpFundamental;
 
 /**
+ * @author  piwi <me@e-piwi.fr>
  */
 class Cookie
 {

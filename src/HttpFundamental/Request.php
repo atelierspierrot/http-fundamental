@@ -27,7 +27,7 @@ use \Library\Helper\Url as UrlHelper;
 /**
  * The global request class
  *
- * @author      Piero Wbmstr <me@e-piwi.fr>
+ * @author  piwi <me@e-piwi.fr>
  */
 class Request
     implements RequestInterface
@@ -691,6 +691,7 @@ class Request
      */
     public static function cleanArgument($arg_value, $flags = ENT_COMPAT, $encoding = 'UTF-8') 
     {
+        $result = null;
         if (is_string($arg_value)) {
             $result = stripslashes( htmlspecialchars($arg_value, ENT_COMPAT, $encoding) );
         } elseif (is_array($arg_value)) {
