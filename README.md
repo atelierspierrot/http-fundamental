@@ -2,6 +2,8 @@ HTTP fundamental
 ================
 
 [![documentation](http://img.ateliers-pierrot-static.fr/read-the-doc.svg)](http://docs.ateliers-pierrot.fr/http-fundamental/)
+[![Code Climate](http://codeclimate.com/github/atelierspierrot/http-fundamental/badges/gpa.svg)](http://codeclimate.com/github/atelierspierrot/http-fundamental)
+
 The HTTP request/response library package of Les Ateliers Pierrot
 
 
