@@ -2,7 +2,7 @@
 /**
  * This file is part of the HTTP Fundamental package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -66,7 +66,7 @@ class Response
      * @var array
      * @TODO : use only objects of the \HttpFundamental\ContentType namespace
      */
-    static $content_types = array(
+    public static $content_types = array(
         'html'          => 'text/html',
         'text'          => 'text/plain',
         'css'           => 'text/css',
@@ -90,7 +90,9 @@ class Response
                 $this->addContent(null, $content);
             }
         }
-        if (!empty($charset)) $this->setCharset($charset);
+        if (!empty($charset)) {
+            $this->setCharset($charset);
+        }
     }
 
     /**
@@ -218,7 +220,7 @@ class Response
      * @param string $type
      * @return self
      */
-    public function setContentType($type) 
+    public function setContentType($type)
     {
         $this->content_type = new ContentType($type);
         return $this;
@@ -227,7 +229,7 @@ class Response
     /**
      * @return object
      */
-    public function getContentType() 
+    public function getContentType()
     {
         return $this->content_type;
     }
@@ -235,7 +237,7 @@ class Response
     /**
      * @return self
      */
-    public function guessContentType() 
+    public function guessContentType()
     {
         $this->content_type = ContentType::createFromContent($this->getContentsAsString());
         return $this;
@@ -331,7 +333,9 @@ class Response
      */
     public function send($content = null, $type = null, $return_string = false)
     {
-        if (empty($this->content_type)) $this->guessContentType();
+        if (empty($this->content_type)) {
+            $this->guessContentType();
+        }
 
         $existing_content_type = $this->getHeader('Content-type');
         if (empty($existing_content_type)) {
@@ -360,7 +364,7 @@ class Response
         if (!empty($file) && @file_exists($file)) {
             if (is_null($file_name)) {
                 $file_name_parts = explode('/', $file);
-                $file_name = end( $file_name_parts );
+                $file_name = end($file_name_parts);
             }
             $this->addHeader('Content-disposition', 'attachment; filename='.$file_name);
             $this->addHeader('Content-Type', 'application/force-download');
@@ -368,9 +372,9 @@ class Response
             $this->addHeader('Content-Length', filesize($file));
             $this->addHeader('Pragma', 'no-cache');
             $this->addHeader('Cache-Control', 'must-revalidate, post-check=0, pre-check=0, public');
-            $this->addHeader('Expires', '0'); 
+            $this->addHeader('Expires', '0');
             $this->renderHeaders();
-            readfile( $file );
+            readfile($file);
             exit;
         }
         return;
@@ -410,7 +414,4 @@ class Response
         }
         $this->addHeader('location', $url);
     }
-    
 }
-
-// Endfile

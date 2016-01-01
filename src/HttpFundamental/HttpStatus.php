@@ -2,7 +2,7 @@
 /**
  * This file is part of the HTTP Fundamental package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -46,7 +46,4 @@ class HttpStatus
     const GONE                   = '410 Gone';
     const UNPROCESSABLE_ENTITY   = '422 Unprocessable Entity';
     const ERROR                  = '500 Internal Server Error';
-
 }
-
-// Endfile

@@ -2,6 +2,8 @@ HTTP fundamental
 ================
 
 [![documentation](http://img.ateliers-pierrot-static.fr/read-the-doc.svg)](http://docs.ateliers-pierrot.fr/http-fundamental/)
+[![Code Climate](http://codeclimate.com/github/atelierspierrot/http-fundamental/badges/gpa.svg)](http://codeclimate.com/github/atelierspierrot/http-fundamental)
+
 The HTTP request/response library package of Les Ateliers Pierrot
 
 
@@ -32,7 +34,7 @@ Author & License
 
 >    http://github.com/atelierspierrot/http-fundamental
 
->    Copyright (c) 2013-2015 Pierre Cassat and contributors
+>    Copyright (c) 2013-2016 Pierre Cassat and contributors
 
 >    Licensed under the Apache 2 license.
 

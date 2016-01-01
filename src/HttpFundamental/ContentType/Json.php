@@ -2,7 +2,7 @@
 /**
  * This file is part of the HTTP Fundamental package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -60,7 +60,9 @@ class Json
      */
     public function prepareContent($content)
     {
-        if (!is_array($content)) $content = array($content);
+        if (!is_array($content)) {
+            $content = array($content);
+        }
         return json_encode($content);
     }
 
@@ -73,7 +75,4 @@ class Json
     {
         return 'application/json';
     }
-
 }
-
-// Endfile

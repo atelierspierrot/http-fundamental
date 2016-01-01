@@ -2,7 +2,7 @@
 /**
  * This file is part of the HTTP Fundamental package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -120,20 +120,36 @@ class Request
      */
     public static function create(
         $url = null, $flag = self::NO_REWRITE,
-        $protocol = 'http', $method = 'get', array $headers = null, 
-        array $arguments = null, array $data = null, 
+        $protocol = 'http', $method = 'get', array $headers = null,
+        array $arguments = null, array $data = null,
         array $session = null, array $files = null, array $cookies = null
     ) {
         $_cls = get_called_class();
         $request = new $_cls($url, $flag);
-        if (!is_null($protocol))    $request->setProtocol($protocol);
-        if (!is_null($method))      $request->setMethod($method);
-        if (!is_null($headers))     $request->setHeaders($headers);
-        if (!is_null($arguments))   $request->setArguments($arguments);
-        if (!is_null($data))        $request->setData($data);
-        if (!is_null($session))     $request->setSession($session);
-        if (!is_null($files))       $request->setFiles($files);
-        if (!is_null($cookies))     $request->setCookies($cookies);
+        if (!is_null($protocol)) {
+            $request->setProtocol($protocol);
+        }
+        if (!is_null($method)) {
+            $request->setMethod($method);
+        }
+        if (!is_null($headers)) {
+            $request->setHeaders($headers);
+        }
+        if (!is_null($arguments)) {
+            $request->setArguments($arguments);
+        }
+        if (!is_null($data)) {
+            $request->setData($data);
+        }
+        if (!is_null($session)) {
+            $request->setSession($session);
+        }
+        if (!is_null($files)) {
+            $request->setFiles($files);
+        }
+        if (!is_null($cookies)) {
+            $request->setCookies($cookies);
+        }
         return $request;
     }
 
@@ -280,7 +296,7 @@ class Request
      * @param   string $name
      * @return  string|null
      */
-    public function getHeader($name) 
+    public function getHeader($name)
     {
         return (!empty($this->headers) && array_key_exists($name, $this->headers)) ? $this->headers[$name] : null;
     }
@@ -321,7 +337,7 @@ class Request
      * @param   string  $clean_encoding The encoding used with `htmlspecialchars()` (default is UTF-8)
      * @return  string  The value retrieved, $default otherwise
      */
-    public function getArgument($param = null, $default = false, $clean = true, $clean_flags = ENT_COMPAT, $clean_encoding = 'UTF-8') 
+    public function getArgument($param = null, $default = false, $clean = true, $clean_flags = ENT_COMPAT, $clean_encoding = 'UTF-8')
     {
         if (!empty($this->arguments) && array_key_exists($param, $this->arguments)) {
             return true===$clean ?
@@ -358,7 +374,7 @@ class Request
                 $this->cleanArgument($this->data, $clean_flags, $clean_encoding) : $this->data;
         } else {
             if (!empty($this->data) && array_key_exists($param, $this->data)) {
-                return true===$clean ? 
+                return true===$clean ?
                     $this->cleanArgument($this->data[$param], $clean_flags, $clean_encoding) : $this->data[$param];
             }
             return $default;
@@ -388,7 +404,7 @@ class Request
      * @param   string  $index
      * @return  array|null
      */
-    public function getFile($param, $index = null) 
+    public function getFile($param, $index = null)
     {
         if (!empty($this->files) && array_key_exists($param, $this->files)) {
             if (!empty($index)) {
@@ -560,7 +576,7 @@ class Request
     /**
      * @return bool
      */
-    public function isCli() 
+    public function isCli()
     {
         return php_sapi_name()=='cli';
     }
@@ -568,7 +584,7 @@ class Request
     /**
      * @return bool
      */
-    public function isGet() 
+    public function isGet()
     {
         return $this->getMethod()==='get';
     }
@@ -576,7 +592,7 @@ class Request
     /**
      * @return bool
      */
-    public function isPost() 
+    public function isPost()
     {
         return $this->getMethod()==='post';
     }
@@ -584,7 +600,7 @@ class Request
     /**
      * @return bool
      */
-    public function isPut() 
+    public function isPut()
     {
         return $this->getMethod()==='put';
     }
@@ -659,7 +675,9 @@ class Request
      */
     protected function _extractSegments(&$arguments)
     {
-        if (is_string($arguments)) $this->_extractArguments($arguments);
+        if (is_string($arguments)) {
+            $this->_extractArguments($arguments);
+        }
         foreach ($arguments as $var=>$val) {
             if (empty($val) && strpos($var, '/')!==false) {
                 $parts = explode('/', $var);
@@ -689,14 +707,14 @@ class Request
      * @param   string  $encoding   The encoding used with htmlspecialchars() (default is UTF-8)
      * @return  string  The cleaned value
      */
-    public static function cleanArgument($arg_value, $flags = ENT_COMPAT, $encoding = 'UTF-8') 
+    public static function cleanArgument($arg_value, $flags = ENT_COMPAT, $encoding = 'UTF-8')
     {
         $result = null;
         if (is_string($arg_value)) {
-            $result = stripslashes( htmlspecialchars($arg_value, ENT_COMPAT, $encoding) );
+            $result = stripslashes(htmlspecialchars($arg_value, ENT_COMPAT, $encoding));
         } elseif (is_array($arg_value)) {
             $result = array();
-            foreach($arg_value as $arg=>$value) {
+            foreach ($arg_value as $arg=>$value) {
                 $result[$arg] = self::cleanArgument($value, $flags, $encoding);
             }
         }
@@ -726,9 +744,9 @@ class Request
      * @return string
      */
     public static function getClientIp()
-    { 
+    {
         if (isset($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-            $ip = $_SERVER['HTTP_X_FORWARDED_FOR']; 
+            $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
         } elseif (isset($_SERVER['HTTP_CLIENT_IP'])) {
             $ip = $_SERVER['HTTP_CLIENT_IP'];
         } else {
@@ -747,14 +765,11 @@ class Request
         } else {
             $return = array();
             foreach ($_SERVER as $name => $value) {
-               if (substr($name, 0, 5) == 'HTTP_') {
-                   $return[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
-               }
+                if (substr($name, 0, 5) == 'HTTP_') {
+                    $return[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
+                }
             }
         }
         return !empty($return) ? $return : array();
-    } 
-
+    }
 }
-
-// Endfile

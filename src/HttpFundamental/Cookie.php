@@ -2,7 +2,7 @@
 /**
  * This file is part of the HTTP Fundamental package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -119,7 +119,7 @@ class Cookie
 // ------------------
 // Setters / Getters
 // ------------------
-    
+
     /**
      * @param int $flag
      * @return self
@@ -460,7 +460,7 @@ class Cookie
         }
         $val = isset($_COOKIE[$this->getName()]) ? $_COOKIE[$this->getName()] : null;
         if ($val && is_string($val) && ($this->getFlag() & self::FLATNESS_ARRAY)) {
-            parse_str($val, $tmp_val); 
+            parse_str($val, $tmp_val);
             if (!empty($tmp_val) && $tmp_val!=$val) {
                 $val = $tmp_val;
             }
@@ -537,7 +537,4 @@ class Cookie
             ->send()
             ;
     }
-   
 }
-
-// Endfile
