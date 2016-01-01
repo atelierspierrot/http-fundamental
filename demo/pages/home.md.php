@@ -33,7 +33,7 @@ var_export($ctt_json);
 <?php
 $content_type_json = new HttpFundamental\ContentType("json");
 $ctt_json = $content_type_json->prepareContent($contents);
-echo '// => '.var_export($ctt_json,1)."\n";
+echo '// => '.var_export($ctt_json, 1)."\n";
 ?>
 
 // get parsed content in HTML
@@ -43,7 +43,7 @@ var_export($ctt_html);
 <?php
 $content_type_html = new HttpFundamental\ContentType("html");
 $ctt_html = $content_type_html->prepareContent($contents);
-echo '// => '.var_export($ctt_html,1)."\n";
+echo '// => '.var_export($ctt_html, 1)."\n";
 ?>
 
 ```
@@ -62,7 +62,7 @@ extension for [Firefox](http://www.mozilla.org/en-US/firefox/fx/).
 $request = new HttpFundamental\Request;
 <?php
 $request = new HttpFundamental\Request;
-echo var_export($request,1)."\n";
+echo var_export($request, 1)."\n";
 ?>
 
 ```
@@ -120,7 +120,7 @@ $custom_request = HttpFundamental\Request::create(
 ?>
 
 var_export($custom_request);
-<?php echo var_export($custom_request,1)."\n"; ?>
+<?php echo var_export($custom_request, 1)."\n"; ?>
 
 echo $custom_request->buildUrl();
 <?php echo '// '.$custom_request->buildUrl()."\n"; ?>

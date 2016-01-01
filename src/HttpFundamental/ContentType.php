@@ -2,21 +2,21 @@
 /**
  * This file is part of the HTTP Fundamental package.
  *
- * Copyright (c) 2013-2015 Pierre Cassat <me@e-piwi.fr> and contributors
- * 
+ * Copyright (c) 2013-2016 Pierre Cassat <me@e-piwi.fr> and contributors
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * The source code of this package is available online at 
+ * The source code of this package is available online at
  * <http://github.com/atelierspierrot/http-fundamental>.
  */
 namespace HttpFundamental;
@@ -43,7 +43,7 @@ class ContentType
 
     /**
      */
-    static $content_types = array(
+    public static $content_types = array(
         'html' => 'text/html',
         'text' => 'text/plain',
         'css' => 'text/css',
@@ -62,7 +62,7 @@ class ContentType
     {
         return new self(self::guessContentType($content));
     }
-    
+
     /**
      * @param string $content
      * @return string
@@ -100,7 +100,7 @@ class ContentType
      * @return  self
      * @throws  \Exception if the content_type was not declared and unknown
      */
-    public function setContentType($content_type) 
+    public function setContentType($content_type)
     {
         if (in_array($content_type, self::$content_types)) {
             $this->content_type = $content_type;
@@ -117,7 +117,7 @@ class ContentType
     /**
      * @return string
      */
-    public function getContentType() 
+    public function getContentType()
     {
         return $this->content_type;
     }
@@ -126,7 +126,7 @@ class ContentType
      * @param \HttpFundamental\ContentTypeInterface $content_type_object
      * @return self
      */
-    public function setContentTypeObject(ContentTypeInterface $content_type_object) 
+    public function setContentTypeObject(ContentTypeInterface $content_type_object)
     {
         $this->content_type_object = $content_type_object;
         $this->setContentType($this->content_type_object->getContentType());
@@ -136,7 +136,7 @@ class ContentType
     /**
      * @return object|null Object implementing the `\HttpFundamental\ContentTypeInterface`
      */
-    public function getContentTypeObject() 
+    public function getContentTypeObject()
     {
         return $this->content_type_object;
     }
@@ -149,7 +149,7 @@ class ContentType
      * @param string $content_type
      * @return self
      */
-    public function prepareContentType($content_type) 
+    public function prepareContentType($content_type)
     {
         $_cls = '\HttpFundamental\ContentType\\'.TextHelper::toCamelCase($content_type);
         if (class_exists($_cls)) {
@@ -207,7 +207,4 @@ class ContentType
             return (string) $content;
         }
     }
-
 }
-
-// Endfile

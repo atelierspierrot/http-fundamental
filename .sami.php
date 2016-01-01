@@ -30,5 +30,3 @@ $options = array(
 );
 
 return new Sami($iterator, $options);
-
-// Endfile

@@ -1,41 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="robots" content="index, follow, all" />
-        <title>HttpFundamental\Request | HTTP Fundamental</title>
-                    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
-                            </head>
-        <body id="class">
-            <div class="header">
-        <ul>
-            <li><a href="../classes.html">Classes</a></li>
-                            <li><a href="../namespaces.html">Namespaces</a></li>
-                        <li><a href="../interfaces.html">Interfaces</a></li>
-            <li><a href="../traits.html">Traits</a></li>
-            <li><a href="../doc-index.html">Index</a></li>
-            
-        </ul>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>HttpFundamental\Request | HTTP Fundamental</title>
 
-        <div id="title">HTTP Fundamental</div>
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
 
-            <div class="type">Class</div>
-    <h1><a href="../HttpFundamental.html">HttpFundamental</a>\Request</h1>
+    <body id="class" data-name="class:HttpFundamental_Request" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
     </div>
-        <div class="content">
-                <p>    class
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">HTTP Fundamental</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../HttpFundamental.html">HttpFundamental</a></li>
+    
+                <li>Request</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>Request</h1>
+    </div>
+
+    <p>    class
     <strong>Request</strong>        implements
-        <abbr title="Patterns\Interfaces\RequestInterface">RequestInterface</abbr></p>
+        <abbr title="Patterns\Interfaces\RequestInterface">RequestInterface</abbr>
+</p>
 
             <div class="description">
-            <p>The global request class</p>
-            <p>
-</p>
-        </div>
+            <p>The global request class</p>                    </div>
+    
     
             <h2>Constants</h2>
 
-            <table>
+            <table class="table table-condensed">
                     <tr>
                 <td>NO_REWRITE</td>
                 <td class="last">
@@ -60,592 +110,671 @@
     
             <h2>Methods</h2>
 
-            <table>
-                    <tr>
-                <td class="type">
-                    static&nbsp;<a href="../HttpFundamental/Request.html"><abbr title="HttpFundamental\Request">Request</abbr></a>
-                </td>
-                <td class="last">
-                    <a href="#method_create">create</a>(string $url = null, int $flag = self::NO_REWRITE, string $protocol = &#039;http&#039;, string $method = &#039;get&#039;, array $headers = null, array $arguments = null, array $data = null, array $session = null, array $files = null, array $cookies = null)
-                    <p>Static constructor : defines the current URL and gets the routes</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    
-                </td>
-                <td class="last">
-                    <a href="#method___construct">__construct</a>(string $url = null, int $flag = self::NO_REWRITE)
-                    <p>Constructor : defines the request URL and the object rewrite flag</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_guessFromCurrent">guessFromCurrent</a>()
-                    <p>Populate the request object with current HTTP request values</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setFlag">setFlag</a>(int $flag)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    int
-                </td>
-                <td class="last">
-                    <a href="#method_getFlag">getFlag</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setUrl">setUrl</a>(string $url)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    string|null
-                </td>
-                <td class="last">
-                    <a href="#method_getUrl">getUrl</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setProtocol">setProtocol</a>(string $protocol)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    string|null
-                </td>
-                <td class="last">
-                    <a href="#method_getProtocol">getProtocol</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setMethod">setMethod</a>(string $method)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    string|null
-                </td>
-                <td class="last">
-                    <a href="#method_getMethod">getMethod</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setHeaders">setHeaders</a>(array $headers = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    array|null
-                </td>
-                <td class="last">
-                    <a href="#method_getHeaders">getHeaders</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    string|null
-                </td>
-                <td class="last">
-                    <a href="#method_getHeader">getHeader</a>(string $name)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setArguments">setArguments</a>(string|array $arguments = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    array|null
-                </td>
-                <td class="last">
-                    <a href="#method_getArguments">getArguments</a>(bool $clean = true, int $clean_flags = ENT_COMPAT, string $clean_encoding = &#039;UTF-8&#039;)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    string
-                </td>
-                <td class="last">
-                    <a href="#method_getArgument">getArgument</a>(string $param = null, mixed $default = false, bool $clean = true, int $clean_flags = ENT_COMPAT, string $clean_encoding = &#039;UTF-8&#039;)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setData">setData</a>(array|string $data = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    string
-                </td>
-                <td class="last">
-                    <a href="#method_getData">getData</a>(string $param = null, mixed $default = false, bool $clean = true, int $clean_flags = ENT_COMPAT, string $clean_encoding = &#039;UTF-8&#039;)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setFiles">setFiles</a>(array $files = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    array|null
-                </td>
-                <td class="last">
-                    <a href="#method_getFiles">getFiles</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    array|null
-                </td>
-                <td class="last">
-                    <a href="#method_getFile">getFile</a>(string $param, string $index = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setSession">setSession</a>(array $session = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    array|null
-                </td>
-                <td class="last">
-                    <a href="#method_getSession">getSession</a>(string $param = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setCookies">setCookies</a>(array $cookies = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    array|null
-                </td>
-                <td class="last">
-                    <a href="#method_getCookies">getCookies</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    array|null
-                </td>
-                <td class="last">
-                    <a href="#method_getCookie">getCookie</a>(string $param)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setAuthentication">setAuthentication</a>(array $authentication = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setAuthenticationType">setAuthenticationType</a>(string $type)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setAuthenticationUser">setAuthenticationUser</a>(string $user)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="HttpFundamental\$this">$this</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_setAuthenticationPassword">setAuthenticationPassword</a>(string $pw)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    array|string|null
-                </td>
-                <td class="last">
-                    <a href="#method_getAuthentication">getAuthentication</a>(string $param = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    string
-                </td>
-                <td class="last">
-                    <a href="#method_buildUrl">buildUrl</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    static&nbsp;bool
-                </td>
-                <td class="last">
-                    <a href="#method_isAjax">isAjax</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    bool
-                </td>
-                <td class="last">
-                    <a href="#method_isCli">isCli</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    bool
-                </td>
-                <td class="last">
-                    <a href="#method_isGet">isGet</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    bool
-                </td>
-                <td class="last">
-                    <a href="#method_isPost">isPost</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    bool
-                </td>
-                <td class="last">
-                    <a href="#method_isPut">isPut</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    mixed|<abbr title="HttpFundamental\false">false</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_getGet">getGet</a>(string $varname, mixed $default = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    mixed|<abbr title="HttpFundamental\false">false</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_getPost">getPost</a>(string $varname, mixed $default = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    mixed|<abbr title="HttpFundamental\false">false</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_getGetOrPost">getGetOrPost</a>(string $varname, mixed $default = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    mixed|<abbr title="HttpFundamental\false">false</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_getPostOrGet">getPostOrGet</a>(string $varname, mixed $default = null)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    static&nbsp;string
-                </td>
-                <td class="last">
-                    <a href="#method_cleanArgument">cleanArgument</a>(string $arg_value, int $flags = ENT_COMPAT, string $encoding = &#039;UTF-8&#039;)
-                    <p>Clean the value taken from request arguments or data</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    static&nbsp;mixed|<abbr title="HttpFundamental\false">false</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_getEnvironment">getEnvironment</a>(string $varname)
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    static&nbsp;string|null
-                </td>
-                <td class="last">
-                    <a href="#method_getReferer">getReferer</a>()
-                    <p>Get the current request referer if available</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    static&nbsp;string
-                </td>
-                <td class="last">
-                    <a href="#method_getClientIp">getClientIp</a>()
-                    <p>
-</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;
-                </td>
-                <td class="last">
+    <a href="../HttpFundamental/Request.html"><abbr title="HttpFundamental\Request">Request</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(
+    string $url = null, 
+    int $flag = self::NO_REWRITE, 
+    string $protocol = &#039;http&#039;, 
+    string $method = &#039;get&#039;, 
+    array $headers = null, 
+    array $arguments = null, 
+    array $data = null, 
+    array $session = null, 
+    array $files = null, 
+    array $cookies = null)
+                                            <p>Static constructor : defines the current URL and gets the routes</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(
+    string $url = null, 
+    int $flag = self::NO_REWRITE)
+                                            <p>Constructor : defines the request URL and the object rewrite flag</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_guessFromCurrent">guessFromCurrent</a>()
+                                            <p>Populate the request object with current HTTP request values</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFlag">setFlag</a>(
+    int $flag)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFlag">getFlag</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUrl">setUrl</a>(
+    string $url)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUrl">getUrl</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setProtocol">setProtocol</a>(
+    string $protocol)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getProtocol">getProtocol</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMethod">setMethod</a>(
+    string $method)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethod">getMethod</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHeaders">setHeaders</a>(
+    array $headers = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeaders">getHeaders</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeader">getHeader</a>(
+    string $name)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setArguments">setArguments</a>(
+    string|array $arguments = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArguments">getArguments</a>(
+    bool $clean = true, 
+    int $clean_flags = ENT_COMPAT, 
+    string $clean_encoding = &#039;UTF-8&#039;)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getArgument">getArgument</a>(
+    string $param = null, 
+    mixed $default = false, 
+    bool $clean = true, 
+    int $clean_flags = ENT_COMPAT, 
+    string $clean_encoding = &#039;UTF-8&#039;)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setData">setData</a>(
+    array|string $data = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getData">getData</a>(
+    string $param = null, 
+    mixed $default = false, 
+    bool $clean = true, 
+    int $clean_flags = ENT_COMPAT, 
+    string $clean_encoding = &#039;UTF-8&#039;)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setFiles">setFiles</a>(
+    array $files = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFiles">getFiles</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFile">getFile</a>(
+    string $param, 
+    string $index = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSession">setSession</a>(
+    array $session = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSession">getSession</a>(
+    string $param = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCookies">setCookies</a>(
+    array $cookies = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCookies">getCookies</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCookie">getCookie</a>(
+    string $param)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAuthentication">setAuthentication</a>(
+    array $authentication = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAuthenticationType">setAuthenticationType</a>(
+    string $type)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAuthenticationUser">setAuthenticationUser</a>(
+    string $user)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAuthenticationPassword">setAuthenticationPassword</a>(
+    string $pw)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    array|string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAuthentication">getAuthentication</a>(
+    string $param = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildUrl">buildUrl</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isAjax">isAjax</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isCli">isCli</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isGet">isGet</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isPost">isPost</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isPut">isPut</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed|<abbr title="HttpFundamental\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGet">getGet</a>(
+    string $varname, 
+    mixed $default = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed|<abbr title="HttpFundamental\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPost">getPost</a>(
+    string $varname, 
+    mixed $default = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed|<abbr title="HttpFundamental\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getGetOrPost">getGetOrPost</a>(
+    string $varname, 
+    mixed $default = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+    mixed|<abbr title="HttpFundamental\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPostOrGet">getPostOrGet</a>(
+    string $varname, 
+    mixed $default = null)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cleanArgument">cleanArgument</a>(
+    string $arg_value, 
+    int $flags = ENT_COMPAT, 
+    string $encoding = &#039;UTF-8&#039;)
+                                            <p>Clean the value taken from request arguments or data</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    mixed|<abbr title="HttpFundamental\false">false</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEnvironment">getEnvironment</a>(
+    string $varname)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReferer">getReferer</a>()
+                                            <p>Get the current request referer if available</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClientIp">getClientIp</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+    
+                </div>
+                <div class="col-md-8 type">
                     <a href="#method_getallheaders">getallheaders</a>()
-                    <p>Emulation of internal <code>getallheaders()</code> function as it does not exist each time</p>
-                </td>
-                <td></td>
-            </tr>
-            </table>
+                                            <p>Emulation of internal <code>getallheaders()</code> function as it does not exist each time</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
 
 
         <h2>Details</h2>
 
-                        <h3 id="method_create">
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_create">
         <div class="location">at line 121</div>
-        <code>        static    public            <a href="../HttpFundamental/Request.html"><abbr title="HttpFundamental\Request">Request</abbr></a>
-    <strong>create</strong>(string $url = null, int $flag = self::NO_REWRITE, string $protocol = &#039;http&#039;, string $method = &#039;get&#039;, array $headers = null, array $arguments = null, array $data = null, array $session = null, array $files = null, array $cookies = null)</code>
+        <code>        static            
+    <a href="../HttpFundamental/Request.html"><abbr title="HttpFundamental\Request">Request</abbr></a>
+    <strong>create</strong>(
+    string $url = null, 
+    int $flag = self::NO_REWRITE, 
+    string $protocol = &#039;http&#039;, 
+    string $method = &#039;get&#039;, 
+    array $headers = null, 
+    array $arguments = null, 
+    array $data = null, 
+    array $session = null, 
+    array $files = null, 
+    array $cookies = null)</code>
     </h3>
     <div class="details">
-        <p>Static constructor : defines the current URL and gets the routes</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Static constructor : defines the current URL and gets the routes</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$url</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>int</td>
+                <td>
+    int</td>
                 <td>$flag</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$protocol</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$method</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$headers</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$arguments</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$data</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$session</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$files</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$cookies</td>
                 <td>
 </td>
@@ -655,9 +784,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><a href="../HttpFundamental/Request.html"><abbr title="HttpFundamental\Request">Request</abbr></a></td>
+            <td>
+    <a href="../HttpFundamental/Request.html"><abbr title="HttpFundamental\Request">Request</abbr></a></td>
             <td>
 </td>
         </tr>
@@ -668,27 +798,33 @@
                     </div>
     </div>
 
-                <h3 id="method___construct">
-        <div class="location">at line 150</div>
-        <code>            public            
-    <strong>__construct</strong>(string $url = null, int $flag = self::NO_REWRITE)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 166</div>
+        <code>                    
+    
+    <strong>__construct</strong>(
+    string $url = null, 
+    int $flag = self::NO_REWRITE)</code>
     </h3>
     <div class="details">
-        <p>Constructor : defines the request URL and the object rewrite flag</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Constructor : defines the request URL and the object rewrite flag</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$url</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>int</td>
+                <td>
+    int</td>
                 <td>$flag</td>
                 <td>Must be one of the class <code>REWRITE</code> constants</td>
             </tr>
@@ -700,22 +836,25 @@
                     </div>
     </div>
 
-                <h3 id="method_guessFromCurrent">
-        <div class="location">at line 166</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_guessFromCurrent">
+        <div class="location">at line 182</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
     <strong>guessFromCurrent</strong>()</code>
     </h3>
     <div class="details">
-        <p>Populate the request object with current HTTP request values</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Populate the request object with current HTTP request values</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -725,7 +864,7 @@
             
                             <h4>See also</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
                 <td>\Library\Helper\Url::getRequestUrl()</td>
                 <td></td>
@@ -735,22 +874,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setFlag">
-        <div class="location">at line 193</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setFlag</strong>(int $flag)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFlag">
+        <div class="location">at line 209</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setFlag</strong>(
+    int $flag)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>int</td>
+                <td>
+    int</td>
                 <td>$flag</td>
                 <td>Must be one of the class <code>REWRITE</code> constants</td>
             </tr>
@@ -759,9 +899,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -772,23 +913,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getFlag">
-        <div class="location">at line 202</div>
-        <code>            public            int
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFlag">
+        <div class="location">at line 218</div>
+        <code>                    
+    int
     <strong>getFlag</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>int</td>
+            <td>
+    int</td>
             <td>
 </td>
         </tr>
@@ -799,22 +940,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setUrl">
-        <div class="location">at line 211</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setUrl</strong>(string $url)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUrl">
+        <div class="location">at line 227</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setUrl</strong>(
+    string $url)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$url</td>
                 <td>
 </td>
@@ -824,9 +966,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -837,23 +980,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getUrl">
-        <div class="location">at line 220</div>
-        <code>            public            string|null
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUrl">
+        <div class="location">at line 236</div>
+        <code>                    
+    string|null
     <strong>getUrl</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>string|null</td>
+            <td>
+    string|null</td>
             <td>
 </td>
         </tr>
@@ -864,22 +1007,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setProtocol">
-        <div class="location">at line 229</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setProtocol</strong>(string $protocol)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setProtocol">
+        <div class="location">at line 245</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setProtocol</strong>(
+    string $protocol)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$protocol</td>
                 <td>
 </td>
@@ -889,9 +1033,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -902,23 +1047,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getProtocol">
-        <div class="location">at line 238</div>
-        <code>            public            string|null
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getProtocol">
+        <div class="location">at line 254</div>
+        <code>                    
+    string|null
     <strong>getProtocol</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>string|null</td>
+            <td>
+    string|null</td>
             <td>
 </td>
         </tr>
@@ -929,22 +1074,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setMethod">
-        <div class="location">at line 247</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setMethod</strong>(string $method)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMethod">
+        <div class="location">at line 263</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setMethod</strong>(
+    string $method)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$method</td>
                 <td>
 </td>
@@ -954,9 +1100,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -967,23 +1114,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getMethod">
-        <div class="location">at line 256</div>
-        <code>            public            string|null
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethod">
+        <div class="location">at line 272</div>
+        <code>                    
+    string|null
     <strong>getMethod</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>string|null</td>
+            <td>
+    string|null</td>
             <td>
 </td>
         </tr>
@@ -994,22 +1141,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setHeaders">
-        <div class="location">at line 265</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setHeaders</strong>(array $headers = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHeaders">
+        <div class="location">at line 281</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setHeaders</strong>(
+    array $headers = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$headers</td>
                 <td>
 </td>
@@ -1019,9 +1167,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -1032,23 +1181,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getHeaders">
-        <div class="location">at line 274</div>
-        <code>            public            array|null
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeaders">
+        <div class="location">at line 290</div>
+        <code>                    
+    array|null
     <strong>getHeaders</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>array|null</td>
+            <td>
+    array|null</td>
             <td>
 </td>
         </tr>
@@ -1059,22 +1208,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getHeader">
-        <div class="location">at line 283</div>
-        <code>            public            string|null
-    <strong>getHeader</strong>(string $name)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeader">
+        <div class="location">at line 299</div>
+        <code>                    
+    string|null
+    <strong>getHeader</strong>(
+    string $name)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$name</td>
                 <td>
 </td>
@@ -1084,9 +1234,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>string|null</td>
+            <td>
+    string|null</td>
             <td>
 </td>
         </tr>
@@ -1097,22 +1248,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setArguments">
-        <div class="location">at line 292</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setArguments</strong>(string|array $arguments = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setArguments">
+        <div class="location">at line 308</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setArguments</strong>(
+    string|array $arguments = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string|array</td>
+                <td>
+    string|array</td>
                 <td>$arguments</td>
                 <td>
 </td>
@@ -1122,9 +1274,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -1135,32 +1288,37 @@
                     </div>
     </div>
 
-                <h3 id="method_getArguments">
-        <div class="location">at line 310</div>
-        <code>            public            array|null
-    <strong>getArguments</strong>(bool $clean = true, int $clean_flags = ENT_COMPAT, string $clean_encoding = &#039;UTF-8&#039;)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArguments">
+        <div class="location">at line 326</div>
+        <code>                    
+    array|null
+    <strong>getArguments</strong>(
+    bool $clean = true, 
+    int $clean_flags = ENT_COMPAT, 
+    string $clean_encoding = &#039;UTF-8&#039;)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>bool</td>
+                <td>
+    bool</td>
                 <td>$clean</td>
                 <td>Clean the argument before return ? (default is true)</td>
             </tr>
                     <tr>
-                <td>int</td>
+                <td>
+    int</td>
                 <td>$clean_flags</td>
                 <td>The PHP flags used with <code>htmlspecialchars()</code> (default is ENT_COMPAT)</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$clean_encoding</td>
                 <td>The encoding used with <code>htmlspecialchars()</code> (default is UTF-8)</td>
             </tr>
@@ -1169,9 +1327,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>array|null</td>
+            <td>
+    array|null</td>
             <td>
 </td>
         </tr>
@@ -1182,42 +1341,51 @@
                     </div>
     </div>
 
-                <h3 id="method_getArgument">
-        <div class="location">at line 324</div>
-        <code>            public            string
-    <strong>getArgument</strong>(string $param = null, mixed $default = false, bool $clean = true, int $clean_flags = ENT_COMPAT, string $clean_encoding = &#039;UTF-8&#039;)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getArgument">
+        <div class="location">at line 340</div>
+        <code>                    
+    string
+    <strong>getArgument</strong>(
+    string $param = null, 
+    mixed $default = false, 
+    bool $clean = true, 
+    int $clean_flags = ENT_COMPAT, 
+    string $clean_encoding = &#039;UTF-8&#039;)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$param</td>
                 <td>The parameter name if so, or 'args' to get all parameters values</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>The default value sent if the argument is not set</td>
             </tr>
                     <tr>
-                <td>bool</td>
+                <td>
+    bool</td>
                 <td>$clean</td>
                 <td>Clean the argument before return ? (default is true)</td>
             </tr>
                     <tr>
-                <td>int</td>
+                <td>
+    int</td>
                 <td>$clean_flags</td>
                 <td>The PHP flags used with <code>htmlspecialchars()</code> (default is ENT_COMPAT)</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$clean_encoding</td>
                 <td>The encoding used with <code>htmlspecialchars()</code> (default is UTF-8)</td>
             </tr>
@@ -1226,9 +1394,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>The value retrieved, $default otherwise</td>
         </tr>
     </table>
@@ -1238,22 +1407,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setData">
-        <div class="location">at line 337</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setData</strong>(array|string $data = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setData">
+        <div class="location">at line 353</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setData</strong>(
+    array|string $data = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>array|string</td>
+                <td>
+    array|string</td>
                 <td>$data</td>
                 <td>
 </td>
@@ -1263,9 +1433,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -1276,42 +1447,51 @@
                     </div>
     </div>
 
-                <h3 id="method_getData">
-        <div class="location">at line 354</div>
-        <code>            public            string
-    <strong>getData</strong>(string $param = null, mixed $default = false, bool $clean = true, int $clean_flags = ENT_COMPAT, string $clean_encoding = &#039;UTF-8&#039;)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getData">
+        <div class="location">at line 370</div>
+        <code>                    
+    string
+    <strong>getData</strong>(
+    string $param = null, 
+    mixed $default = false, 
+    bool $clean = true, 
+    int $clean_flags = ENT_COMPAT, 
+    string $clean_encoding = &#039;UTF-8&#039;)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$param</td>
                 <td>The parameter name if so, or 'args' to get all parameters values</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>The default value sent if the argument is not set</td>
             </tr>
                     <tr>
-                <td>bool</td>
+                <td>
+    bool</td>
                 <td>$clean</td>
                 <td>Clean the argument before return ? (default is true)</td>
             </tr>
                     <tr>
-                <td>int</td>
+                <td>
+    int</td>
                 <td>$clean_flags</td>
                 <td>The PHP flags used with <code>htmlspecialchars()</code> (default is ENT_COMPAT)</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$clean_encoding</td>
                 <td>The encoding used with <code>htmlspecialchars()</code> (default is UTF-8)</td>
             </tr>
@@ -1320,9 +1500,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>The value retrieved, $default otherwise</td>
         </tr>
     </table>
@@ -1332,22 +1513,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setFiles">
-        <div class="location">at line 372</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setFiles</strong>(array $files = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFiles">
+        <div class="location">at line 388</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setFiles</strong>(
+    array $files = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$files</td>
                 <td>
 </td>
@@ -1357,9 +1539,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -1370,23 +1553,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getFiles">
-        <div class="location">at line 381</div>
-        <code>            public            array|null
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFiles">
+        <div class="location">at line 397</div>
+        <code>                    
+    array|null
     <strong>getFiles</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>array|null</td>
+            <td>
+    array|null</td>
             <td>
 </td>
         </tr>
@@ -1397,28 +1580,31 @@
                     </div>
     </div>
 
-                <h3 id="method_getFile">
-        <div class="location">at line 391</div>
-        <code>            public            array|null
-    <strong>getFile</strong>(string $param, string $index = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFile">
+        <div class="location">at line 407</div>
+        <code>                    
+    array|null
+    <strong>getFile</strong>(
+    string $param, 
+    string $index = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$param</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$index</td>
                 <td>
 </td>
@@ -1428,9 +1614,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>array|null</td>
+            <td>
+    array|null</td>
             <td>
 </td>
         </tr>
@@ -1441,22 +1628,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setSession">
-        <div class="location">at line 407</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setSession</strong>(array $session = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSession">
+        <div class="location">at line 423</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setSession</strong>(
+    array $session = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$session</td>
                 <td>
 </td>
@@ -1466,9 +1654,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -1479,22 +1668,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getSession">
-        <div class="location">at line 417</div>
-        <code>            public            array|null
-    <strong>getSession</strong>(string $param = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSession">
+        <div class="location">at line 433</div>
+        <code>                    
+    array|null
+    <strong>getSession</strong>(
+    string $param = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$param</td>
                 <td>
 </td>
@@ -1504,9 +1694,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>array|null</td>
+            <td>
+    array|null</td>
             <td>
 </td>
         </tr>
@@ -1517,22 +1708,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setCookies">
-        <div class="location">at line 430</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setCookies</strong>(array $cookies = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCookies">
+        <div class="location">at line 446</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setCookies</strong>(
+    array $cookies = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$cookies</td>
                 <td>
 </td>
@@ -1542,9 +1734,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -1555,23 +1748,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getCookies">
-        <div class="location">at line 439</div>
-        <code>            public            array|null
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCookies">
+        <div class="location">at line 455</div>
+        <code>                    
+    array|null
     <strong>getCookies</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>array|null</td>
+            <td>
+    array|null</td>
             <td>
 </td>
         </tr>
@@ -1582,22 +1775,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getCookie">
-        <div class="location">at line 448</div>
-        <code>            public            array|null
-    <strong>getCookie</strong>(string $param)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCookie">
+        <div class="location">at line 464</div>
+        <code>                    
+    array|null
+    <strong>getCookie</strong>(
+    string $param)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$param</td>
                 <td>
 </td>
@@ -1607,9 +1801,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>array|null</td>
+            <td>
+    array|null</td>
             <td>
 </td>
         </tr>
@@ -1620,22 +1815,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setAuthentication">
-        <div class="location">at line 457</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setAuthentication</strong>(array $authentication = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthentication">
+        <div class="location">at line 473</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setAuthentication</strong>(
+    array $authentication = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>array</td>
+                <td>
+    array</td>
                 <td>$authentication</td>
                 <td>
 </td>
@@ -1645,9 +1841,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -1658,22 +1855,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setAuthenticationType">
-        <div class="location">at line 467</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setAuthenticationType</strong>(string $type)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthenticationType">
+        <div class="location">at line 483</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setAuthenticationType</strong>(
+    string $type)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$type</td>
                 <td>
 </td>
@@ -1683,9 +1881,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -1696,22 +1895,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setAuthenticationUser">
-        <div class="location">at line 477</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setAuthenticationUser</strong>(string $user)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthenticationUser">
+        <div class="location">at line 493</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setAuthenticationUser</strong>(
+    string $user)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$user</td>
                 <td>
 </td>
@@ -1721,9 +1921,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -1734,22 +1935,23 @@
                     </div>
     </div>
 
-                <h3 id="method_setAuthenticationPassword">
-        <div class="location">at line 487</div>
-        <code>            public            <abbr title="HttpFundamental\$this">$this</abbr>
-    <strong>setAuthenticationPassword</strong>(string $pw)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAuthenticationPassword">
+        <div class="location">at line 503</div>
+        <code>                    
+    <abbr title="HttpFundamental\$this">$this</abbr>
+    <strong>setAuthenticationPassword</strong>(
+    string $pw)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$pw</td>
                 <td>
 </td>
@@ -1759,9 +1961,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td><abbr title="HttpFundamental\$this">$this</abbr></td>
+            <td>
+    <abbr title="HttpFundamental\$this">$this</abbr></td>
             <td>
 </td>
         </tr>
@@ -1772,22 +1975,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getAuthentication">
-        <div class="location">at line 497</div>
-        <code>            public            array|string|null
-    <strong>getAuthentication</strong>(string $param = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthentication">
+        <div class="location">at line 513</div>
+        <code>                    
+    array|string|null
+    <strong>getAuthentication</strong>(
+    string $param = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$param</td>
                 <td>
 </td>
@@ -1797,9 +2001,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>array|string|null</td>
+            <td>
+    array|string|null</td>
             <td>
 </td>
         </tr>
@@ -1810,23 +2015,23 @@
                     </div>
     </div>
 
-                <h3 id="method_buildUrl">
-        <div class="location">at line 513</div>
-        <code>            public            string
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildUrl">
+        <div class="location">at line 529</div>
+        <code>                    
+    string
     <strong>buildUrl</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>
 </td>
         </tr>
@@ -1837,23 +2042,23 @@
                     </div>
     </div>
 
-                <h3 id="method_isAjax">
-        <div class="location">at line 554</div>
-        <code>        static    public            bool
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAjax">
+        <div class="location">at line 570</div>
+        <code>        static            
+    bool
     <strong>isAjax</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -1864,23 +2069,23 @@
                     </div>
     </div>
 
-                <h3 id="method_isCli">
-        <div class="location">at line 563</div>
-        <code>            public            bool
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isCli">
+        <div class="location">at line 579</div>
+        <code>                    
+    bool
     <strong>isCli</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -1891,23 +2096,23 @@
                     </div>
     </div>
 
-                <h3 id="method_isGet">
-        <div class="location">at line 571</div>
-        <code>            public            bool
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isGet">
+        <div class="location">at line 587</div>
+        <code>                    
+    bool
     <strong>isGet</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -1918,23 +2123,23 @@
                     </div>
     </div>
 
-                <h3 id="method_isPost">
-        <div class="location">at line 579</div>
-        <code>            public            bool
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isPost">
+        <div class="location">at line 595</div>
+        <code>                    
+    bool
     <strong>isPost</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -1945,23 +2150,23 @@
                     </div>
     </div>
 
-                <h3 id="method_isPut">
-        <div class="location">at line 587</div>
-        <code>            public            bool
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isPut">
+        <div class="location">at line 603</div>
+        <code>                    
+    bool
     <strong>isPut</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>bool</td>
+            <td>
+    bool</td>
             <td>
 </td>
         </tr>
@@ -1972,28 +2177,31 @@
                     </div>
     </div>
 
-                <h3 id="method_getGet">
-        <div class="location">at line 597</div>
-        <code>            public            mixed|<abbr title="HttpFundamental\false">false</abbr>
-    <strong>getGet</strong>(string $varname, mixed $default = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGet">
+        <div class="location">at line 613</div>
+        <code>                    
+    mixed|<abbr title="HttpFundamental\false">false</abbr>
+    <strong>getGet</strong>(
+    string $varname, 
+    mixed $default = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$varname</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>
 </td>
@@ -2003,9 +2211,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>mixed|<abbr title="HttpFundamental\false">false</abbr></td>
+            <td>
+    mixed|<abbr title="HttpFundamental\false">false</abbr></td>
             <td>
 </td>
         </tr>
@@ -2016,28 +2225,31 @@
                     </div>
     </div>
 
-                <h3 id="method_getPost">
-        <div class="location">at line 607</div>
-        <code>            public            mixed|<abbr title="HttpFundamental\false">false</abbr>
-    <strong>getPost</strong>(string $varname, mixed $default = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPost">
+        <div class="location">at line 623</div>
+        <code>                    
+    mixed|<abbr title="HttpFundamental\false">false</abbr>
+    <strong>getPost</strong>(
+    string $varname, 
+    mixed $default = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$varname</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>
 </td>
@@ -2047,9 +2259,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>mixed|<abbr title="HttpFundamental\false">false</abbr></td>
+            <td>
+    mixed|<abbr title="HttpFundamental\false">false</abbr></td>
             <td>
 </td>
         </tr>
@@ -2060,28 +2273,31 @@
                     </div>
     </div>
 
-                <h3 id="method_getGetOrPost">
-        <div class="location">at line 617</div>
-        <code>            public            mixed|<abbr title="HttpFundamental\false">false</abbr>
-    <strong>getGetOrPost</strong>(string $varname, mixed $default = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGetOrPost">
+        <div class="location">at line 633</div>
+        <code>                    
+    mixed|<abbr title="HttpFundamental\false">false</abbr>
+    <strong>getGetOrPost</strong>(
+    string $varname, 
+    mixed $default = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$varname</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>
 </td>
@@ -2091,9 +2307,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>mixed|<abbr title="HttpFundamental\false">false</abbr></td>
+            <td>
+    mixed|<abbr title="HttpFundamental\false">false</abbr></td>
             <td>
 </td>
         </tr>
@@ -2104,28 +2321,31 @@
                     </div>
     </div>
 
-                <h3 id="method_getPostOrGet">
-        <div class="location">at line 631</div>
-        <code>            public            mixed|<abbr title="HttpFundamental\false">false</abbr>
-    <strong>getPostOrGet</strong>(string $varname, mixed $default = null)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPostOrGet">
+        <div class="location">at line 647</div>
+        <code>                    
+    mixed|<abbr title="HttpFundamental\false">false</abbr>
+    <strong>getPostOrGet</strong>(
+    string $varname, 
+    mixed $default = null)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$varname</td>
                 <td>
 </td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td>
+    mixed</td>
                 <td>$default</td>
                 <td>
 </td>
@@ -2135,9 +2355,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>mixed|<abbr title="HttpFundamental\false">false</abbr></td>
+            <td>
+    mixed|<abbr title="HttpFundamental\false">false</abbr></td>
             <td>
 </td>
         </tr>
@@ -2148,31 +2369,39 @@
                     </div>
     </div>
 
-                <h3 id="method_cleanArgument">
-        <div class="location">at line 692</div>
-        <code>        static    public            string
-    <strong>cleanArgument</strong>(string $arg_value, int $flags = ENT_COMPAT, string $encoding = &#039;UTF-8&#039;)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cleanArgument">
+        <div class="location">at line 710</div>
+        <code>        static            
+    string
+    <strong>cleanArgument</strong>(
+    string $arg_value, 
+    int $flags = ENT_COMPAT, 
+    string $encoding = &#039;UTF-8&#039;)</code>
     </h3>
     <div class="details">
-        <p>Clean the value taken from request arguments or data</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Clean the value taken from request arguments or data</p>                                </div>
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$arg_value</td>
                 <td>The parameter name if so, or 'args' to get all parameters values</td>
             </tr>
                     <tr>
-                <td>int</td>
+                <td>
+    int</td>
                 <td>$flags</td>
                 <td>The PHP flags used with htmlspecialchars() (default is ENT_COMPAT)</td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$encoding</td>
                 <td>The encoding used with htmlspecialchars() (default is UTF-8)</td>
             </tr>
@@ -2181,9 +2410,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>The cleaned value</td>
         </tr>
     </table>
@@ -2193,22 +2423,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getEnvironment">
-        <div class="location">at line 710</div>
-        <code>        static    public            mixed|<abbr title="HttpFundamental\false">false</abbr>
-    <strong>getEnvironment</strong>(string $varname)</code>
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEnvironment">
+        <div class="location">at line 728</div>
+        <code>        static            
+    mixed|<abbr title="HttpFundamental\false">false</abbr>
+    <strong>getEnvironment</strong>(
+    string $varname)</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
                             <h4>Parameters</h4>
 
-                    <table>
+                    <table class="table table-condensed">
                     <tr>
-                <td>string</td>
+                <td>
+    string</td>
                 <td>$varname</td>
                 <td>
 </td>
@@ -2218,9 +2449,10 @@
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>mixed|<abbr title="HttpFundamental\false">false</abbr></td>
+            <td>
+    mixed|<abbr title="HttpFundamental\false">false</abbr></td>
             <td>
 </td>
         </tr>
@@ -2231,22 +2463,25 @@
                     </div>
     </div>
 
-                <h3 id="method_getReferer">
-        <div class="location">at line 720</div>
-        <code>        static    public            string|null
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReferer">
+        <div class="location">at line 738</div>
+        <code>        static            
+    string|null
     <strong>getReferer</strong>()</code>
     </h3>
     <div class="details">
-        <p>Get the current request referer if available</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Get the current request referer if available</p>                                </div>
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>string|null</td>
+            <td>
+    string|null</td>
             <td>
 </td>
         </tr>
@@ -2257,23 +2492,23 @@
                     </div>
     </div>
 
-                <h3 id="method_getClientIp">
-        <div class="location">at line 728</div>
-        <code>        static    public            string
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClientIp">
+        <div class="location">at line 746</div>
+        <code>        static            
+    string
     <strong>getClientIp</strong>()</code>
     </h3>
     <div class="details">
-        <p>
-</p>
-        <p>
-</p>
-        <div class="tags">
+                <div class="tags">
             
                             <h4>Return Value</h4>
 
-                    <table>
+                    <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>
+    string</td>
             <td>
 </td>
         </tr>
@@ -2284,26 +2519,35 @@
                     </div>
     </div>
 
-                <h3 id="method_getallheaders">
-        <div class="location">at line 743</div>
-        <code>        static    public            
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getallheaders">
+        <div class="location">at line 761</div>
+        <code>        static            
+    
     <strong>getallheaders</strong>()</code>
     </h3>
     <div class="details">
-        <p>Emulation of internal <code>getallheaders()</code> function as it does not exist each time</p>
-        <p>
-</p>
-        <div class="tags">
+                    <div class="method-description">
+                                    <p>Emulation of internal <code>getallheaders()</code> function as it does not exist each time</p>                                </div>
+                <div class="tags">
             
             
             
                     </div>
     </div>
 
+            </div>
+            </div>
+
     
             </div>
-            <div id="footer">
-        Generated by <a href="http://sami.sensiolabs.org/" target="_top">Sami, the API Documentation Generator</a>.
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
     </div>
     </body>
+
 </html>
