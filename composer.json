@@ -16,7 +16,7 @@
     "require": {
         "php": ">=5.4.0",
         "atelierspierrot/patterns": "~1.0.9",
-        "atelierspierrot/library": "~1.1.0"
+        "atelierspierrot/library": "2.0.0-BETA"
     },
     "require-dev": {
         "sami/sami": "@stable",
